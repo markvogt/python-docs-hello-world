@@ -1,3 +1,28 @@
+# API APP HELLO WORLD PROJECT
+
+For original details see the BOTOM of this readme.md file...
+
+## DAILY JOURNAL by MV
+
+REFERENCE IN DOCS.MICROSOFT.COM: 
+
+https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python?tabs=bash
+
+### 2020 05 13 MV: 
+- CONTINUED work on this API App...
+- PREPARED to deploy this helloworld app actuall to the Azure Cloud Services
+- INSTALLED AzureCLI (for linux) on thing1 ==> SUCCESSFUL :-)
+- RAN commands (locally on thing1 using AzureCLI invoked from VSCode's integrated terminal)
+
+### 2020 05 12 MV: 
+- FORKED project to cloud repo in github.com (no changes)
+- CLONED project down to thing1
+- READ reference (see above)
+- RAN project as-is ==> SUCCESFUL :-) 
+
+#########################################################################
+#########################################################################
+
 ---
 page_type: sample
 description: "This is a minimal sample app that demonstrates how to run a Python Flask application on Azure App Service on Linux."
