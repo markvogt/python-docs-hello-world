@@ -8,11 +8,39 @@ REFERENCE IN DOCS.MICROSOFT.COM:
 
 https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python?tabs=bash
 
+### 2020 05 14 MV: 
+- CONTINUED work... 
+- INSPECTED exception message... 
+- THEORY: my using "-l northcentralus" WASN'T a VALID location? 
+- CHANGE location to "-l centralus" per sample article
+- RE-DEPLOYED 
+- - => SUCCESSFUL deployment to https://mvhelloworld.azurewebsites.net !!
+- ADDED additional app route "/detectpage"
+- RE-DEPLOYED
+- - => SUCCESSFUL deployment to https://mvhelloworld.azurewebsites.net/detectpage !!
+- ADDED mock JSON returns to above app route 
+- RE-DEPLOYED
+- - => SUCCESSFUL deployment & function ! 
+- - BROWSING to https://mvhelloworld.azurewebsites.net/detectpage 
+-- returns mock JSON  {key1:value1, key2:value2, key3:value3} 
+- PAUSED on THIS app - time to CLONE, RENAME and EXPAND !!! 
+- UPDATED readme.md (this file)
+- COMMITTED and PUSHED...
+
 ### 2020 05 13 MV: 
 - CONTINUED work on this API App...
 - PREPARED to deploy this helloworld app actuall to the Azure Cloud Services
-- INSTALLED AzureCLI (for linux) on thing1 ==> SUCCESSFUL :-)
+- INSTALLED AzureCLI (for linux) on thing1 
+- - => SUCCESSFUL :-)
 - RAN commands (locally on thing1 using AzureCLI invoked from VSCode's integrated terminal)
+- ATTEMPTED deploy-to-AzureCloud of "mvhelloworld" API app as follows: 
+- - $ az webapp up --sku F1 -n "mvhelloworld"
+- - => EXCEPTION immediately
+- - exception related to MISSING "location" parame (required in AzureCLI 2.5.0 and above)
+- ATTEMPTED deploy-to-AzureCloud of mvhelloworld API app as follows: 
+- - $ az webapp up --sku F1 -n "mvhelloworld" -l northcentralus
+- - => EXCEPTION after 30+ minutes; NOT sure WHY :-( ... 
+- PAUSED for the night
 
 ### 2020 05 12 MV: 
 - FORKED project to cloud repo in github.com (no changes)
